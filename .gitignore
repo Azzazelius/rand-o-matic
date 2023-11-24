@@ -1,0 +1,6 @@
+# created by virtualenv automatically
+venv/
+test.py
+test.html
+tmp.py
+.idea
