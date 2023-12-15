@@ -22,7 +22,7 @@ print("=============== start the project =======================")
 # github_blueprint = make_github_blueprint(client_id="тут мог бы быть секретный ключ",
 #                                          client_secret="а тут клиентский секрет  ")
 # app.register_blueprint(github_blueprint, url_prefix="/login") 
- 
+
 # рендер главной страницы и запрос авторизации
 
 @app.route('/', methods=['GET'])
@@ -82,6 +82,6 @@ socketio.start_background_task(set_number)
 
 if __name__ == '__main__':
     try:
-        app.run(host='0.0.0.0', port=80)
+        app.run(host='0.0.0.0', port=8080)
     except Exception as e:
         print(f"Failed to start Flask app: {str(e)}")
